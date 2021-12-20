@@ -1,0 +1,644 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    text-align: left;
+}
+
+/* fuentes */
+h1{
+    font-family:  'Poppins', sans-serif;
+    font-size: 100px;
+    color: #ffffff;
+    
+}
+
+h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+h3{
+    font-family: 'Sintony', sans-serif;
+    font-size: 22px;
+    color: #ffffff;
+}
+
+h4{
+    font-family: 'Sintony', sans-serif;
+    font-size: 20px;
+    color: #0C1726;
+}
+
+h5{
+    font-family: 'Sintony', sans-serif;
+    font-size: 19px;
+    color: #ffffff;
+}
+
+nav a{
+    text-decoration: none;
+    font-family: 'Sintony', sans-serif;
+    color: #ffffff;
+    margin:5px;  
+}
+
+p{
+    font-family: 'Sintony', sans-serif;
+    font-size: 22px;
+    color: #ffffff;
+} 
+
+
+/* header */
+.header{
+    background-color: #1B2740;
+    height: 90px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: left;
+    position: fixed;
+    z-index: 999; 
+}
+
+.header__icono{
+    padding: 6px;
+    width: 90px;
+    height:auto;
+    position: fixed;
+    margin: 12px;
+}
+
+.header__nav > ul{
+    display: flex;
+    flex-flow: nowrap;
+    justify-content:flex-end;
+}
+
+/* lista de botones-menu */
+.header__nav__menu{
+    display: flex;
+	flex-direction: row;
+    list-style: none;
+    font-size: 0;
+    width: 100vw;
+}
+
+.header__nav__menu li{
+    width: 10%;
+    font-size: 22px;
+    width: 250px;
+    padding: 30px 0px;
+    text-align: center;
+}
+
+.navFlex__inicio{order: -2;}
+.navFlex__acercade{order: 0;}
+.navFlex__servicios{order: 3;}
+.navFlex__quienessomos{order: 5;}
+.navFlex__contacto{order: 8;}
+
+.header__nav__submenu{
+    font-size: 22px;
+    top: 80px;
+    left: 780px;
+    display: none;
+    list-style: none;
+    z-index: 999; 
+}
+
+.header__nav__menu ul li{
+    display: block;
+    background-color: #1B2740;
+}
+
+.header__nav__menu li:hover >ul{
+    display: block;
+}
+
+.header__nav__submenu li{
+    border-top: 1px solid #8b8b8b;
+    padding: 5px;
+}
+
+.header__nav__submenu li:first-child{
+    border:none;
+}
+
+.header__nav__submenu li:hover{
+    background-color:#686f86;
+}
+
+/* footer */
+.footer{
+    display: flex;
+    background-color:#555C73;
+    height: 100px;
+    font-size: 19;
+    z-index: 998;
+}
+
+.footer__imagen{
+    padding: 6px;
+    height: 67.85px;
+    width: 90px;
+    margin: 15px;  
+}
+
+.footer__div{
+    z-index: 998;
+    display: flex;
+}
+
+.footer__div__referencias{
+    margin:30px;
+}
+
+.footer__div__contacto{
+    margin: 30px 30px 30px 150px;
+}
+
+.footer__nav__referencias, .footer__nav__contacto{
+    list-style: none;
+    text-align: left;
+    flex-direction: column;
+}
+
+.footer__div__phone,.footer__div__mail {
+    height: 16px;
+    width: auto;
+}
+
+/* contenedores de texto */
+/* h1 */
+.section__div__titulo{
+    margin-left: 100px;
+    padding: 30px 0 10px 0;
+    z-index: 998;
+}
+
+/* h2 */
+.section__div__segundotitulo{
+    z-index: 998;
+    text-align: center; 
+}
+
+/* h3 */
+.section__div__tercertitulo{
+    margin-left: 100px;
+    padding: 5px 150px 5px 0;
+    z-index: 998;
+}
+
+/* h4 */
+.section__div__equipo h4{
+    z-index: 998;
+    text-align: center;
+}
+
+/* p */
+.section__div__texto{
+    margin-left: 100px;
+    padding: 30px 150px 10px 0;
+    z-index: 998; 
+}
+
+/* contenedores de imagenes */
+/* index */
+.section__div__fondo--index{
+    background-image: url("../assets/img/solucionesempresariales.png");
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+}
+.section__div__fondo--index:before{
+    content: "";
+    background-color: #0C1726;
+    width: 100%;
+    height:100vh;
+    opacity: 0.7; 
+    position: absolute;
+}
+
+/* acerca de */
+.section__div__fondo--acercade{
+    background-image: url("../assets/img/acercade.png");
+    height:100vh;
+    width: 100%;
+    background-size: cover; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+}
+.section__div__fondo--acercade:before{
+    content: "";
+    background-color: #0C1726;
+    width: 100%;
+    height:100vh;
+    position: absolute;
+    opacity: 0.7;   
+}
+
+/* servicios */
+.section__div__fondo--servicios{
+    background-image: url("../assets/img/servicios.png");
+    height:100vh;
+    width: 100%;
+    background-size: cover; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+}
+.section__div__fondo--servicios:before{
+    content: "";
+    background-color: #0C1726;
+    background-size: cover; 
+    width: 100%;
+    height:100vh;
+    position: absolute;
+    opacity: 0.7;   
+}
+
+/* quienes somos */
+.section__div__fondo--quienessomos{
+    background-image: url("../assets/img/quienessomos.png");
+    height:100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+}
+.section__div__fondo--quienessomos:before{
+    content: "";
+    background-color: #0C1726;
+    width: 100%;
+    height:100vh;
+    position: absolute;
+    opacity: 0.6;   
+}
+
+/* contacto-formulario */
+.section__div__fondo--contacto{
+    background-image: url("../assets/img/contactanos.png");
+    height:100vh;
+    width: 100%;
+    background-size: cover; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+}
+.section__div__fondo--contacto:before{
+    content: "";
+    background-color: #0C1726;
+    width: 100%;
+    height:100vh;
+    position: absolute;
+    opacity: 0.7;   
+}
+
+/* SECCION: servicios */
+.section__div__table{
+    display: flex; 
+    height: 100vh;
+    
+}
+
+.servicio{
+    background-color: rgba(255, 255, 255, 0.705);
+    border-right: 1px solid #686f86;
+    border-radius: 15px;
+    margin: 140px 6px auto 6px;
+    padding: 15px;
+    height: 550px;
+    align-items: center;
+    width: 100px;
+    position: relative; 
+    flex-basis: 100%;
+}
+
+.servicio__imagen{
+    width: 90px;
+    height: auto;
+    float: left;
+    margin: 2px 75px 2px 75px;
+}
+
+.servicio__tipo{
+    font-family:  'Poppins', sans-serif;
+    color: #1B2740;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-align: center;    
+}
+
+.servicio__detalle{
+    font-family:  'Poppins', sans-serif;
+    font-size: 15px;
+    list-style: none;
+    text-align: center;
+    color: #151b25;
+}
+
+.servicio__detalle__item{
+    border-top: 1px solid #8692b8;
+    line-height: 1.25;
+    padding: 7px 0;  
+}
+
+.servicio:last-child{
+    border-right: none;
+}
+
+/* SECCION: quienes somos */
+.section__div__contadoras{
+    display: flex;
+    align-content: center;
+}
+
+.section__div__equipo{
+    background-color: rgba(255, 255, 255, 0.747);
+    border-right: 1px solid #686f86;
+    border-radius: 15px;
+    z-index: 998;
+    padding: 25px;
+    flex-direction: column;
+    margin:62px 15px;
+    height: inherit;
+    flex-basis: 100%;
+}
+
+.section__div__equipo--giovannabrasesco{
+    background-image: url("../assets/img/personaejemplo.png");
+    width: 100px;
+    height: 100px;
+    border-radius:150px;
+    background-size: cover;
+    margin: 0 auto;
+}
+.section__div__equipo--ximenaelizalde{
+    background-image: url("../assets/img/ximenaelizalde.png");
+    width: 100px;
+    height: 100px;
+    border-radius:150px;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.section__div__equipo--florenciaportillo{
+    background-image: url("../assets/img/personaejemplo2.png");
+    width: 100px;
+    height: 100px;
+    border-radius:150px;
+    background-size: cover;
+    margin: 0 auto;
+}
+.section__div__trayectoria p{
+    color: #151b25;
+    font-size: 17px;
+    z-index: 998;
+    text-align: center;
+}
+
+/* SECCION : contacto */
+
+.section__div__article{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin:0 auto;
+    z-index: 998;
+}
+
+.section__div__formulario{
+    flex-basis: 100%;
+    box-sizing: border-box;
+    width: fit-content;
+    height: 420px;
+    background-color:#c5ced98a;
+    border-radius: 9px;
+    font-family:  'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+fieldset{
+    border:none;
+    padding: 25px 30px ;
+}
+
+input, textarea{
+    outline: none;
+    border:none;
+    padding: 8px;
+}
+
+.section__div__campo, .section__div__check{
+    padding: 5px;
+}
+
+.section__div__campo input, textarea{
+    border: solid 1px #8692b8;
+    font-size: 15px;
+}
+
+.campo, textarea{
+    width:915px;
+    background-color: #ffffff94;
+}
+
+.campo:focus{
+    border-color:#0C1726;
+}
+
+/* botones */
+.boton{
+    border-radius: 10px;
+    display: inline-block;
+    padding: 5px 20px;
+    box-shadow:0 0 40px -10px #000;
+}
+
+.boton--blanco{
+    color:  #1B2740;
+    background-color: #ffffff ;
+}
+
+.boton--blanco:hover{
+    background-color:#555C73;
+    color:#ffffff ;
+}
+
+.boton--blanco:active{
+    background-color: #1B2740;
+}
+
+.section__div__botones{
+    z-index: 998;
+}
+
+/* medias queries */
+/* desktop */
+@media only screen and (min-width:1240px){
+    .section__div__titulo h1{
+        text-align:left;
+        font-size: 100px; 
+        color: #ffffff;
+    }
+
+    .section__div__texto{
+        text-align: left;
+        font-size: 22px;
+        color: #ffffff;
+    }
+}
+
+@media only screen and (min-width:880px) and (max-width:1239px){
+    .section__div__titulo h1{
+        text-align:left;
+        font-size: 80px; 
+        color: #ffffff;
+    }
+    
+    .section__div__texto{
+        text-align: left;
+    }
+
+    .header__nav__menu{
+        padding:0 70px 30px 120px;
+    }
+
+    .header__nav__menu li{
+        font-size: 17px;
+    }
+
+    .header__nav__menu li ul a{
+        padding: 10px;
+    }
+}
+
+@media only screen and  (min-width:0px) and (max-width:879px) {
+    .section__div__titulo,.section__div__tercertitulo {
+        text-align:left;
+        margin-left: 10px; 
+    }
+    .section__div__texto{
+        text-align:left;
+        margin-left: 10px; 
+        padding-right: 15px;
+    }
+
+    .section__div__titulo h1{
+        font-size: 42px; 
+    }
+
+    .section__div__texto p{
+        font-size: 17px;
+        text-align: justify;
+        
+    }
+
+    .section__div__tercertitulo h3{
+        font-size: 19px;
+    }
+
+    .header__icono{
+        padding: 6px;
+        width: 70px;
+        height:auto;
+        position: fixed;
+        margin: 19px 5px;
+    }
+
+    .header__nav__menu{
+        display: flex;
+        justify-content: space-around;
+        margin-left: 20px;
+        padding: 10px 35px 60px 45px;
+    }
+
+    .header__nav__menu li{
+        font-size: 12px;
+        text-align: center; 
+    }
+
+    .header__nav__submenu{
+        position: absolute;
+    }
+
+    .header__nav__menu li ul a{
+        padding: 15px;
+    }
+
+    .footer__div{
+        display: flex;  
+    }
+
+    .footer__imagen{
+        padding: 6px;
+        height: 53.53px;
+        width: 70px;
+        margin: 24px 5px;
+    }
+
+    .footer__div__contacto{
+        margin-left: 20px;
+    }
+
+    .footer__div__referencias{
+        margin: 30px 0;
+    }
+
+    .footer__div__contacto a, .footer__div__referencias a{
+        font-size: 13px;
+    }
+
+    .footer__div__phone, .footer__div__mail{
+        position: absolute;
+        left: 85px;
+        height: 13px;
+        width: auto; 
+    }
+
+
+    .section__div__article{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin:0 auto;
+        z-index: 998;
+    }
+    
+    .section__div__formulario{
+        flex-basis: 100%;
+        box-sizing: border-box;
+        height: 420px;
+        background-color:#c5ced98a;
+        border-radius: 9px;
+        font-family:  'Poppins', sans-serif;
+        font-size: 14px;
+    }
+    
+    fieldset{
+        border:none;
+        padding: 10px 15px ;
+    }
+    
+    .section__div__campo input, textarea{
+        border: solid 1px #8692b8;
+        font-size: 14px;
+    }
+    
+    .campo, textarea{
+        width: 360px;
+        background-color: #ffffff94;
+        padding: 5px;
+    }
+}
