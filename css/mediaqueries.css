@@ -1,158 +1,345 @@
 /* medias queries */
-/* desktop */
-@media only screen and (min-width:1240px){
+
+@media (max-width:1200px){
+    
     .section__div__titulo h1{
-        text-align:left;
-        font-size: 100px; 
-        color: #ffffff;
+        font-size: 6rem;
     }
 
-    .section__div__texto{
-        text-align: left;
-        font-size: 22px;
-        color: #ffffff;
+    .section__div__titulo--contacto h1{
+        font-size: 6rem;
     }
-}
 
-@media only screen and (min-width:880px) and (max-width:1239px){
-    .section__div__titulo h1{
-        text-align:left;
-        font-size: 80px; 
-        color: #ffffff;
+    .section__div__titulo--acercaDe h1{
+        font-size: 6rem;
+    }
+
+    .section__div__formulario{
+        font-size: 1.2rem;
+    }
+
+    p{
+        font-size: 1.5rem;
+    }
+
+
+    .section__div__formulario{
+        height: 410px;
     }
     
-    .section__div__texto{
-        text-align: left;
+    fieldset{
+        padding: 10px 15px ;
+    }
+    
+    .section__div__campo input, textarea{
+        font-size: 14px;
+    }
+    
+
+    fieldset{
+        padding: 10px 15px ;
+    }
+    
+    .section__div__campo input, textarea{
+        font-size: 0.9rem;
+    }
+    
+    .campo, textarea{
+        width: 800px;
+        padding: 5px;
     }
 
-    .header__nav__menu{
-        padding:0 70px 30px 120px;
+    nav a{
+        font-size: 1.1rem;
+    }
+
+    .header__nav__submenu, .header__nav__menu{
+        font-size:1rem;
     }
 
     .header__nav__menu li{
-        font-size: 17px;
-    }
-
-    .header__nav__menu li ul a{
-        padding: 10px;
+        font-size: 1rem;
+        width: 17vw;
     }
 }
 
-@media only screen and  (min-width:0px) and (max-width:879px) {
-    .section__div__titulo,.section__div__tercertitulo {
-        text-align:left;
-        margin-left: 10px; 
-    }
-    .section__div__texto{
-        text-align:left;
-        margin-left: 10px; 
-        padding-right: 15px;
+
+
+@media (max-width:890px) {
+    .section__div__titulo{
+        width: fit-content;
     }
 
     .section__div__titulo h1{
-        font-size: 42px; 
+        font-size: 3rem;
     }
 
-    .section__div__texto p{
-        font-size: 17px;
-        text-align: justify;
+    .section__div__titulo--contacto h1{
+        font-size: 3rem;
+    }
+
+    .section__div__titulo--acercaDe h1{
+        font-size: 3rem;
+    }
+
+    p{
+        font-size: 1.3rem;
+    }
+
+    .campo, textarea{
+        width: 690px;
+    }
+
+    .header__nav__submenu{
+        font-size:15px;
+    }
+
+    .header__nav__menu li{
+        font-size: 16px;
+        width: 17vw;
+    }
+
+
+}
+
+@media (max-width:856px){
+    .campo, textarea{
+        width: 680px;
+        padding: 5px;
+    }
+
+    .header__nav__menu li{
+        font-size: 0.6rem;
+        width: 17vw;
+    }
+
+    p{
+        font-size: 1.2rem;
+    }
+
+
+}
+
+@media (max-width:767px){
+
+    .section__div__titulo h1{
+        font-size: 3rem;
+    }
+    .section__div__titulo--contacto h1{
+        font-size:  3rem;
+    }
+
+    .section__div__titulo--acercaDe h1{
+        font-size: 3rem;
+    }
+     
+    .campo, textarea{
+        width: 490px;
+    }
+
+
+    .header__nav__submenu{
+        visibility: hidden;
+    }
+
+    .header__nav__menu ul{
+        width: 70vw;
+    }
+
+    .header__nav__menu li{
+        font-size: 0.5rem;
+        width: 17vw;
+    }
+
+    .footer{
+        display: block;
+        height: auto;
+    }
+
+    .footer__div{
+        padding: 0 30vw;
+        display: inline-block;
+    }
+
+    .footer__imagen{
+        padding:8px;
+        align-items: center;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .footer__imagen img{
+        width: 110px;
+        height:auto;
         
+    }
+    .footer__div__contacto{
+        width: 40vw;
+        align-items: center;
+        
+    }
+
+    .footer__div__referencias{
+        
+        width: 35vw;
+        text-align: center;
+    }
+
+    .footer__div__contacto a, .footer__div__referencias a{
+        font-size: 13px;
+        text-align: center;
+    }
+
+}
+
+@media (max-width:759px) {
+    .section__div__campo input, .section__div__campo textarea{
+        width: 70vw;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+    }
+
+    .header__nav{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .header__nav__menu li{
+        width: 14vw;
+    }
+}
+
+
+@media (max-width:540px){
+    p{
+        font-size: 1.1rem;
+    }
+
+    .section__div__formulario{
+        font-size: 1.1rem;
+    }
+    
+    .section__div__campo input, textarea{
+        font-size: 1.1rem;
+    }
+
+    nav a {
+        font-size: 0.7rem;
+    }
+
+
+}
+
+/* vista mobile */
+@media (max-width:470px) {
+    .section__div__titulo h1{
+        font-size: 3rem;
+    }
+    .section__div__titulo--contacto h1{
+        font-size:  3rem;
+    }
+
+    .section__div__titulo--acercaDe h1{
+        font-size: 3rem;
+    }
+
+    .header__nav__menu,.header__nav__submenu{
+        visibility: hidden;
+    }
+
+    .section__div__titulo,.section__div__tercertitulo {
+        margin-left: 5px; 
+    }
+    .section__div__texto p{
+        margin-left:5px ;
+    }
+
+    p{
+        font-size: 16px;
     }
 
     .section__div__tercertitulo h3{
         font-size: 19px;
     }
 
-    .header__icono{
-        padding: 6px;
-        width: 70px;
-        height:auto;
-        position: fixed;
-        margin: 19px 5px;
-    }
-
-    .header__nav__menu{
+    .header__div{
         display: flex;
-        justify-content: space-around;
-        margin-left: 20px;
-        padding: 10px 35px 60px 45px;
+        justify-content: right;
+        align-items: center;
+        position: fixed;
+        z-index: 999;
+        margin:0 auto;
+        height: 90px;
+        width: 100%;
     }
-
-    .header__nav__menu li{
-        font-size: 12px;
-        text-align: center; 
+    
+    .header__div img{
+        visibility: visible;
+        display: flex;
+        justify-self: flex-end;
+        width:auto;
+        height: 40px;
     }
+    
+   
 
-    .header__nav__submenu{
-        position: absolute;
-    }
-
-    .header__nav__menu li ul a{
-        padding: 15px;
+    .footer{
+        display: block;
+        height: auto;
+        text-align: center;
+        /* width: 100vw; */
     }
 
     .footer__div{
-        display: flex;  
+        display: block;
+        text-align: center;
+        /* width: 100vw; */
+        padding: 0 30vw;
+        text-align: center;
     }
 
     .footer__imagen{
-        padding: 6px;
-        height: 53.53px;
-        width: 70px;
-        margin: 24px 5px;
+        padding:8px;
+        align-items: center;
+        padding: 0 auto;
     }
 
+    .footer__imagen img{
+        width: 90px;
+        height:auto;
+        
+    }
     .footer__div__contacto{
-        margin-left: 20px;
+        width: 50vw;
+        align-items: center;
     }
 
     .footer__div__referencias{
-        margin: 30px 0;
+        width: 40vw;
+        text-align: center;
     }
 
     .footer__div__contacto a, .footer__div__referencias a{
         font-size: 13px;
     }
 
-    .footer__div__phone, .footer__div__mail{
-        position: absolute;
-        left: 85px;
-        height: 13px;
-        width: auto; 
-    }
-
-
-    .section__div__article{
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        margin:0 auto;
-        z-index: 998;
-    }
-    
     .section__div__formulario{
-        flex-basis: 100%;
-        box-sizing: border-box;
-        height: 420px;
-        background-color:#c5ced98a;
-        border-radius: 9px;
-        font-family:  'Poppins', sans-serif;
         font-size: 14px;
+        height: 350px;
     }
     
     fieldset{
-        border:none;
         padding: 10px 15px ;
     }
     
     .section__div__campo input, textarea{
-        border: solid 1px #8692b8;
-        font-size: 14px;
+        font-size: 0.95rem;
     }
     
-    .campo, textarea{
-        width: 360px;
-        background-color: #ffffff94;
-        padding: 5px;
+    input{
+        font-size: 0.9rem;
     }
+    
 }
