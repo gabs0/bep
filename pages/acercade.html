@@ -14,8 +14,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Sintony&display=swap" rel="stylesheet">
 
-    <!-- font awesome -->
+    <!--iconos font awesome -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+   
+    <!-- libreria de animación -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -54,13 +58,13 @@
 
         <section class="section">
             <div class="section__div--acercade">
-                <div class="section__div__titulo--acercaDe">
+                <div class="section__div__titulo--acercaDe" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                     <h1>Acerca de BEP</h1>
                 </div>
-                <div class="section__div__tercertitulo">
+                <div class="section__div__tercertitulo" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                     <h3>Contadoras públicas</h3> 
                 </div>
-                <div class="section__div__texto--acercaDe">
+                <div class="section__div__texto--acercaDe" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                     <p>En BEP Soluciones Empresariales, brindamos <strong>servicios
                         profesionales de asesoramiento tributario, financiero,
                         contable, laboral y societario </strong> que nos permiten acompañar el
@@ -105,5 +109,9 @@
         
         </footer>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

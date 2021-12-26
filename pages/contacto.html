@@ -14,8 +14,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Sintony&display=swap" rel="stylesheet">
 
-    <!-- font awesome -->
+    <!-- iconos font awesome -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <!-- libreria de animación -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -55,7 +58,7 @@
 
         <section class="section">
             <div class="section__div--contacto">
-                <div class="section__div__titulo--contacto">
+                <div class="section__div__titulo--contacto" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                     <h1>Contactanos</h1>
                 </div>
 
@@ -137,7 +140,11 @@
             </div>
         </footer>
         
-    </div>   
+    </div> 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>  
 
 </body> 
 
