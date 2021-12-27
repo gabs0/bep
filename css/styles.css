@@ -151,7 +151,7 @@ p{
 .header__nav__submenu li{
     border-top: 1px solid #8b8b8b;
     padding: 5px;
-    font-size: 16px;
+    font-size: 21px;
 }
 
 .header__nav__submenu li:first-child{
@@ -254,7 +254,7 @@ p{
     display: flex;
     z-index: 998;
     width: 65vw;
-    padding: 5px 5px 10px 0;
+    padding: 5px 5px 10px 35px;
     font-size: 6rem;
     
 }
@@ -346,6 +346,7 @@ p{
     display: flex;
     flex-direction: column;
     justify-content: center;   
+    align-items: center;
 }
 .section__div--servicios:before{
     content: "";
@@ -407,7 +408,7 @@ p{
     border-right: 1px solid #686f86;
     border-radius: 15px;
     width: 19%;
-    height: 100%;
+    height: 80%;
     margin: 10px;
     padding-bottom: 9px;
     align-items: center;
@@ -445,7 +446,6 @@ p{
     list-style: none;
     text-align: center;
     color: #151b25;
-    
 }
 
 .servicio__detalle__item{
@@ -463,6 +463,7 @@ p{
 .section__div__contadoras{
     display: flex;
     align-content: center;
+    justify-content: space-around;
 }
 
 .section__div__equipo{
@@ -472,9 +473,9 @@ p{
     z-index: 998;
     padding: 25px;
     flex-direction: column;
-    margin:62px 15px;
+    margin:62px 0;
     height: inherit;
-    flex-basis: 100%;
+    /* flex-basis: 100%; */
 }
 
 .section__div__equipo--giovannabrasesco{
@@ -504,17 +505,17 @@ p{
 }
 .section__div__trayectoria p{
     color: #151b25;
-    font-size: 0.9rem; 
+    font-size: 1.1rem; 
     z-index: 998;
     text-align: center;
 }
 
-/* animaciones */
-swashIn
+.section__div__trayectoria{
+    width: 23vw;
+}
 
 
 /* SECCION : contacto */
-
 .section__div__article{
     display: flex;
     justify-content: center;
@@ -606,6 +607,41 @@ textarea{
 .section__div__botones{
     z-index: 998;
 }
+
+/* animaciones-transformaciones-transiciones */
+
+.hoverZoom{
+    overflow: hidden;
+}
+
+
+
+/* SECCION: servicios */
+.section__div__table:hover .hoverZoom:hover{
+    transform: scale(1.1);
+    opacity: 1;
+    transition: .3s ease-in-out;
+    box-shadow:0 8px 20px 0px #0c1726c5;
+    filter: blur(0px);
+}
+
+/* SECCION: quienes somos */
+.section__div__contadoras:hover .hoverZoom,.section__div__table:hover .hoverZoom {
+    filter: blur(3px);
+    opacity: 0.5;
+    box-shadow: none;
+}
+
+.section__div__contadoras:hover .hoverZoom:hover{
+    filter: blur(0px);
+    opacity: 1;
+    box-shadow:0 8px 20px 0px #0c1726c5;
+    transform: scale(1.2);
+    transition: .3s ease-in-out;
+}
+
+
+
 
 
 
