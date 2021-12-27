@@ -3,23 +3,23 @@
 @media (max-width:1200px){
     
     .section__div__titulo h1{
-        font-size: 6rem;
+        font-size: 4rem;
     }
 
     .section__div__titulo--contacto h1{
-        font-size: 6rem;
+        font-size: 4rem;
     }
 
     .section__div__titulo--acercaDe h1{
-        font-size: 6rem;
+        font-size: 4rem;
     }
 
     .section__div__formulario{
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     p{
-        font-size: 1.5rem;
+        font-size: 1.1rem;
     }
 
 
@@ -83,7 +83,7 @@
     }
 
     p{
-        font-size: 1.3rem;
+        font-size: 0.97rem;
     }
 
     .campo, textarea{
@@ -114,7 +114,7 @@
     }
 
     p{
-        font-size: 1.2rem;
+        font-size: 0.96rem;
     }
 
 
@@ -123,14 +123,14 @@
 @media (max-width:767px){
 
     .section__div__titulo h1{
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
     .section__div__titulo--contacto h1{
-        font-size:  3rem;
+        font-size:  2.5rem;
     }
 
     .section__div__titulo--acercaDe h1{
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
      
     .campo, textarea{
@@ -214,15 +214,15 @@
 
 @media (max-width:540px){
     p{
-        font-size: 1.1rem;
+        font-size: 0.95rem;
     }
 
     .section__div__formulario{
-        font-size: 1.1rem;
+        font-size:0.95rem;
     }
     
     .section__div__campo input, textarea{
-        font-size: 1.1rem;
+        font-size: 0.95rem;
     }
 
     nav a {
@@ -235,14 +235,14 @@
 /* vista mobile */
 @media (max-width:470px) {
     .section__div__titulo h1{
-        font-size: 3rem;
+        font-size: 2rem;
     }
     .section__div__titulo--contacto h1{
-        font-size:  3rem;
+        font-size:  2rem;
     }
 
     .section__div__titulo--acercaDe h1{
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .header__nav__menu,.header__nav__submenu{
@@ -289,13 +289,11 @@
         display: block;
         height: auto;
         text-align: center;
-        /* width: 100vw; */
     }
 
     .footer__div{
         display: block;
         text-align: center;
-        /* width: 100vw; */
         padding: 0 30vw;
         text-align: center;
     }
