@@ -433,7 +433,7 @@ p{
 }
 
 .servicio__tipo h2{
-    font-size: 1.7rem;
+    font-size: 1.5rem;
 }
 
 .servicio__detalle{
@@ -441,7 +441,7 @@ p{
     flex-direction: column;
     justify-items: center;
     font-family:  'Poppins', sans-serif;
-    font-size: 1.1rem;
+    font-size: 0.68rem;
     width: 17vw;
     list-style: none;
     text-align: center;
