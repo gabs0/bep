@@ -614,7 +614,11 @@ textarea{
     overflow: hidden;
 }
 
-
+.header__nav__menu li:hover{
+    background-color:#555C73;
+    transition: .3s ease-in-out;
+    border-radius: 15px;
+}
 
 /* SECCION: servicios */
 .section__div__table:hover .hoverZoom:hover{
