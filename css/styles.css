@@ -383,7 +383,6 @@ p{
     display: flex;
     flex-direction: column;
     justify-content: center; 
-    /* align-items: center;   */
 }
 .section__div--contacto:before{
     content: "";
@@ -441,7 +440,7 @@ p{
     flex-direction: column;
     justify-items: center;
     font-family:  'Poppins', sans-serif;
-    font-size: 0.9rem;
+    font-size: 0.75rem;
     width: 17vw;
     list-style: none;
     text-align: center;
